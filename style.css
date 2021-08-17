@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    position: relative;
+    margin-top: 10px;
+    color: orangered;
+    text-align: center;
+    top: 10VH;
+}
+.frais{
+    position: relative;
+    top: 10vh;
+    color: #969696;
+    font-size: 16px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.rightSection{
+    text-align: center;
+    width: 400px;
+    position: relative;
+    left: 1000px;
+    bottom: 120px;
+}
+.groupe1 input , .groupe2 input{
+    width: 100%;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 25px;
+}
+.groupe2{
+    display: flex;
+}
+/* front card */
+.card_full{
+    position: relative;
+    border-radius: 10px;
+    background: #DDD;
+    width: 350px;
+    height: 200px;
+    top: 200px;
+}
+.puce{
+    font-weight: normal;
+    width: 50px;
+    height: 35px;
+    left: 35px;
+    border-radius: 6px;
+    background: #CCC;
+    position: relative;
+}
+.intPuce{
+    display: block;
+    width: 30px;
+    height: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #d9d9d9;
+    position: relative;
+    top: 7px;
+}
+.point{
+    position: relative;
+    color: white;
+    font-weight: normal;
+    opacity: 0.5;
+    font-size: 30px;
+    top: 90px;
+    left: 45px;
+}
+.fullName{
+    position:relative;
+    color: white;
+    opacity: 0.5;
+    top : 80px;
+    left: 35px;
+    font-size: 19px;
+}
+.monthYear{
+    position:relative;
+    color: white;
+    opacity: 0.5;
+    top : 60px;
+    left: 260px;
+    font-size: 13px;
+}
+.security
+{
+    position: relative;
+    top: 120px;
+    left: 620px;
+    color: #969696;
+    font-size: 14px;
+}
+
+/* BACK CARD */
+
+.flip-backcard{
+    position: relative;
+    width: 350px;
+    border-radius: 10px;
+    background: #DDD;
+    height: 200px;
+    top: 200px;
+}
+.bande1{
+    position: relative;
+    top: 20px;
+    width: 350px;
+    height: 40px;
+    background: black;
+}
+.bande2{
+    position: relative;
+    top: 40px;
+    left: 10px;
+    width: 280px;
+    height: 35px;
+    background: white;
+}
+.cryptoBack{
+    position: relative;
+    left: 300px;
+    bottom: 30px;
+}
+.texte{
+    font-weight: normal;
+    position: relative;
+    width: 235px ;
+    font-size: 8px;
+    top: 8px;
+    left: 70px;
+    text-align: center;
+    opacity: 50%;
+}
+.puceback{
+    font-weight: normal;
+    width: 50px;
+    height: 35px;
+    border-radius: 6px;
+    background: #CCC;
+    position: relative;
+    left: 10px;
+    top: 60px;
+}
+.intPuceback{
+    display: block;
+    width: 30px;
+    height: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 7px;
+}
+/* BUTTON */
+
+button{
+    font-size: 14px;
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+}
+.flip-card {
+    width: 350px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 600px;
+    bottom: 100px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card_full, .flip-backcard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+} 
+.card_full {
+    color: black;
+}
+.flip-backcard {
+    color: white;
+    transform: rotateY(180deg);
+} 

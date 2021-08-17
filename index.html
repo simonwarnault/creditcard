@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="file.js"></script>
+    <title>Credit Card</title>
+</head>
+
+<body>
+    <h1>Paiement par carte de crédit</h1>
+    <div class="frais"><br>Frais de transaction
+        <span style="color: green;">0.00€</span>
+    </div>
+    <div class="container">
+        <div class="flip-card">
+            <div class="flip-card-inner" id="flip-card-inner">
+                <div class="card_full">
+                    <div class="point">
+                        <p id="point">•••• &nbsp; •••• &nbsp; •••• &nbsp; ••••</p>
+                    </div>
+                    <div class="puce">
+                        <div class="intPuce">
+                        </div>
+                    </div>
+                    <div class="fullName">
+                        <p id="fullName">FULL NAME</p>
+                    </div>
+                    <div class="monthYear">
+                        <p id="date">MM/YY</p>
+                    </div>
+                </div>
+                <div class="flip-backcard">
+                    <div class="bande1">
+                    </div>
+                    <div class="bande2">
+                    </div>
+                    <div class="puceback">
+                        <div class="intPuceback">
+                        </div>
+                    </div>
+                    <div class="cryptoBack" style="color: white;">
+                        <p id='cryptoBack'><b>123</b></p>
+                    </div>
+                    <div class="texte" style="color:white">This card has been issued by Jesse Pollak and is licensed
+                        for anyonne to use anywhere for free. It comes with no warranty. For support issues, please
+                        visit: github.com/jessepollak/card.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="security">
+            🔒 Paiement sécurisé par by HiPay SAS, 256-bit SSL
+        </div>
+        <div class="rightSection">
+            <div class="groupe1">
+                <label><b>Numéro de la carte</b></label><br>
+                <input id="cardNumber"
+                    pattern="^((67\d{2})|(4\d{3})|(5[1-5]\d{2})|(6011))(-?\s?\d{4}){3}|(3[4,7])\d{2}-?\s?\d{6}-?\s?\d{5}$"
+                    maxlength="19" required></input>
+            </div>
+            <div class="groupe1">
+                <label><b>Titulaire de la carte</b></label><br>
+                <input id="cardName" pattern="([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}" maxlength="30" required></input>
+            </div>
+            <div class="groupe2">
+                <div class="expiration">
+                    <label><b>Date d'expiration</b></label>
+                    <input placeholder="MM/YY" id="expirationDate" pattern="(0[1-9]|10|11|12)/[0-9]{2}" minlength="5"
+                        maxlength="5" id="expe1" required></input>
+                </div>
+                <div class="crypto">
+                    <label><b>Cryptogramme</b></label><input placeholder="CVC" id="Crypto" pattern="([0-9]{3})"
+                        maxlength="3" minlength="3" required></input>
+                </div>
+            </div>
+            <div>
+                <button style="color:white"><b>Payer 35.49€</b></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
